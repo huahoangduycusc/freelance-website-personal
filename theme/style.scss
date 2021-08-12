@@ -27,6 +27,11 @@ body {
   background-color: #fff;
   overflow-x: hidden;
 }
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 .header {
   width: 100%;
   background-color: $highlight-color;
@@ -35,7 +40,7 @@ body {
   .header-container {
     max-width: 1280px;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -45,7 +50,7 @@ body {
     .header-logo {
       a {
         img {
-          width: 120px;
+          width: 100px;
         }
       }
     }
@@ -113,6 +118,7 @@ body {
   pointer-events: all;
 }
 .body-content {
+  width: 100%;
 }
 .white {
   color: #fff !important;
@@ -161,6 +167,8 @@ body {
               padding: 15px 5px 15px 10px;
               display: block;
               color: #fff;
+            }
+            .nav-item-link.active{
               border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             }
             &:last-child {
